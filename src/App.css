@@ -1,0 +1,176 @@
+@font-face {
+	font-family: 'Inter UI'; 
+	src: url(/fonts/Inter-UI-Regular.otf) format('truetype'); 
+}
+
+html {
+  box-sizing: border-box;
+  font-family:'Inter UI';
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(232, 231, 231);
+}
+
+.container {
+  width: 1010px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+}
+
+.menu_buttons {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.App {
+  display: flex;
+  width: 1010px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app_card {
+  display: flex;
+  width: 454px;
+  height: 281px;
+  background-color: #fff;
+  box-shadow: 4px 0px 4px 3px rgba(0,0,0,0.1);
+  margin: 18px;
+}
+.card_description {
+  font-size: 12px;
+  color: #282c34;
+  width: 228px;
+  height: 129px;
+  padding-top: 10px;
+}
+.card_container__right {
+  line-height: normal;
+  display: flex;
+  width: 271px;
+  margin: 10px 20px;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.card_container__right title {
+  width: 200px;
+ display: block;
+ font-size: 20px;
+ overflow-y: hidden;
+}
+.card_date {
+ font-size: 12px;
+ color: #b7b7b9;
+}
+
+.ant-image .ant-image-img {
+  height: 100%;
+}
+
+.spin {
+  margin: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nodata {
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.card_rate {
+  font-size: 1em;
+}
+
+.ant-pagination-options {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .App {
+    width: 100%;
+  }
+  .app_card {
+    width: 388px;
+    height: 285px;
+    margin: 10px;
+  }
+  .card_description {
+    font-size: 12px;
+    color: #282c34;
+    width: 367px;
+    height: 92px;
+    margin-top: 20px;
+  }
+  .card_container__right {
+    display: block;
+    width: 271px;
+  }
+  .ant-image {
+    width: 60px;
+    height: 91px;
+    position: absolute;
+    margin: 10px; 
+  }
+  .card_container__right title {
+   width: 200px;
+   margin-left: 60px;
+  }
+  .card_date {
+   margin-left: 60px;
+   font-size: 12px;
+   color: #b7b7b9;
+  }
+
+}

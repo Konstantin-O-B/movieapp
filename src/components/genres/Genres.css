@@ -1,0 +1,9 @@
+.genreName {
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .genre_container {
+        margin-left: 55px;
+      }
+}

@@ -1,0 +1,26 @@
+.numberCircle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 2px solid;
+    color: #666;
+    font: 12px Arial, sans-serif;
+    position: absolute;
+    right: -10px;
+}
+
+@media (min-width: 359px) {
+    .numberCircle {
+        right: 0em;
+    }
+}
+
+@media (max-width: 480px) {
+    .numberCircle {
+        right: -6em;
+    }
+}
